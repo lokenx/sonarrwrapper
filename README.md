@@ -26,10 +26,31 @@ Define your Sonarr server details somewhere in your server-side code.
 
     Sonarr.systemStatus();
 
-**seriesGet:** Get episode download status of TV show
+**seriesStats:** Get episode download status of TV show
 
-    SickRage.seriesGet(id);
-    id should be a Sonarr ID
+    Sonarr.seriesStats(tvdb);
+    id should be a TVDB ID
+    
+**seriesGet:** Check whether show exists on Sonarr server
+
+    Sonarr.seriesGet(tvdb);
+    id should be a TVDB ID
+
+**seriesDelete:** Delete a series from Sonarr server
+
+    Sonarr.seriesDelete(tvdb);
+    id should be a TVDB ID
+
+
+**seriesPost:** Add TV show to Sonarr server
+
+	Sonarr.seriesPost(tvdb, title, qualityProfileId, seasonFolder, rootFolderPath, episodes);
+	tvdb should be a TVDB ID
+	title should be TV show title
+	qualityProfileId should be quality profile
+	seasonFolder should be true if you want folders for seasons
+	rootFolderPath should be the path where episodes are saved
+	episodes should be true if you want new and old episodes
 
 ## License
 
