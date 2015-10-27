@@ -18,6 +18,7 @@ Define your Sonarr server details somewhere in your server-side code.
       Sonarr.url = "http://192.168.0.1";
       Sonarr.port = 8081;
       Sonarr.api = "abcdef012345";
+      Sonarr.directory = "";
     }
 
 ## Functions
@@ -30,7 +31,7 @@ Define your Sonarr server details somewhere in your server-side code.
 
     Sonarr.seriesStats(tvdb);
     id should be a TVDB ID
-    
+
 **seriesGet:** Check whether show exists on Sonarr server
 
     Sonarr.seriesGet(tvdb);

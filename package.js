@@ -1,6 +1,6 @@
 Package.describe({
   name: 'lokenx:sonarrwrapper',
-  version: '0.0.2',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'Wrapper for the Sonarr API',
   // URL to the Git repository containing the source code for this package.
@@ -13,7 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.0.2');
 
-  api.use('meteor-base');
+  api.use('meteor-base@1.0.1');
   api.use('check');
   api.use('http');
   api.use('underscore');
@@ -31,6 +31,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('sonarrwrapper');
+  api.use('lokenx:sonarrwrapper');
   api.addFiles('sonarrwrapper-tests.js');
 });
