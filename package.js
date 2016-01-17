@@ -20,6 +20,7 @@ Package.onUse(function(api) {
 
   api.addFiles('lib/server/export/functions.js', ['server']);
   api.addFiles('lib/server/methods/systemStatus.js', ['server']);
+  api.addFiles('lib/server/methods/profilesGet.js', ['server']);
   api.addFiles('lib/server/methods/seriesStats.js', ['server']);
   api.addFiles('lib/server/methods/seriesPost.js', ['server']);
   api.addFiles('lib/server/methods/seriesGet.js', ['server']);
