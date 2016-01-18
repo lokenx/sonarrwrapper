@@ -1,6 +1,6 @@
 Package.describe({
   name: 'lokenx:sonarrwrapper',
-  version: '0.0.4',
+  version: '0.0.7',
   // Brief, one-line summary of the package.
   summary: 'Wrapper for the Sonarr API',
   // URL to the Git repository containing the source code for this package.
