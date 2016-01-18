@@ -1,6 +1,6 @@
 Package.describe({
   name: 'lokenx:sonarrwrapper',
-  version: '0.0.7',
+  version: '0.0.8',
   // Brief, one-line summary of the package.
   summary: 'Wrapper for the Sonarr API',
   // URL to the Git repository containing the source code for this package.
@@ -20,6 +20,7 @@ Package.onUse(function(api) {
 
   api.addFiles('lib/server/export/functions.js', ['server']);
   api.addFiles('lib/server/methods/systemStatus.js', ['server']);
+  api.addFiles('lib/server/methods/profilesGet.js', ['server']);
   api.addFiles('lib/server/methods/seriesStats.js', ['server']);
   api.addFiles('lib/server/methods/seriesPost.js', ['server']);
   api.addFiles('lib/server/methods/seriesGet.js', ['server']);
